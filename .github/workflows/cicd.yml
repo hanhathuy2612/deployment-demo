@@ -39,6 +39,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGE }}
+          # tags: huyha25062000/demo:lastest
 
       # - name: Verify
       #   run: echo ${{ steps.docker_build.outputs.digest }}
